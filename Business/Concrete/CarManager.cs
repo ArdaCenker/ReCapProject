@@ -23,7 +23,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Car>> GetAllCars()
         {
-            return new SuccessDataResult<List<Car>>(_iCarDal.GetAll());
+            return new SuccessDataResult<List<Car>>(_iCarDal.GetAll(),Messages.AllCarsListed);
         }
         
         public IDataResult<List<Car>> GetByDailyPrice(decimal min, decimal max)
@@ -69,6 +69,11 @@ namespace Business.Concrete
         public IDataResult<List<CarDetailDto>> GetCarDetails()
         {
             return new SuccessDataResult<List<CarDetailDto>>(_iCarDal.GetCarDetails());
+        }
+
+        public IDataResult<Car> GetCarById(int id)
+        {
+            return new SuccessDataResult<Car>(_iCarDal.Get(i => i.Id == id));
         }
     }
 }
