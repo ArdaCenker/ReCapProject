@@ -1,5 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -20,9 +22,11 @@ namespace Business.Concrete
         {
             _rentalDal = rentalDal;
         }
+        
+        [ValidationAspect(typeof(RentalValidator))]
         public IResult Add(Rental rental)
         {
-            var results = _rentalDal.GetAll(r=>r.CarId == rental.CarId);
+            var results = _rentalDal.GetAll(r => r.CarId == rental.CarId);
             foreach (var result in results)
             {
                 if (result.ReturnDate == null)
@@ -42,12 +46,12 @@ namespace Business.Concrete
 
         public IDataResult<List<Rental>> GetAll()
         {
-            return new SuccessDataResult<List<Rental>>(_rentalDal.GetAll()) ;
+            return new SuccessDataResult<List<Rental>>(_rentalDal.GetAll());
         }
 
         public IDataResult<Rental> GetByRentalId(int id)
         {
-            return new SuccessDataResult<Rental>(_rentalDal.Get(p=>p.Id == id));
+            return new SuccessDataResult<Rental>(_rentalDal.Get(p => p.Id == id));
         }
 
         public IDataResult<List<RentalDetailDto>> GetRentalDetails()
@@ -67,5 +71,13 @@ namespace Business.Concrete
             _rentalDal.Update(updatedRental);
             return new SuccessResult(Messages.RentalUpdated);
         }
+
+        [ValidationAspect(typeof(RentalValidator))]
+        public IResult Update(Rental rental)
+        {
+            _rentalDal.Update(rental);
+            return new SuccessResult("Kiralama işlemi güncellendi.");
+        }
     }
 }
+

@@ -1,5 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using DataAccess.Concrete;
@@ -24,22 +26,11 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Brand>>(_iBrandDal.GetAll());
         }
 
+        [ValidationAspect(typeof(BrandValidator))]
         public IResult Add(Brand brand)
         {
-            if (brand.BrandName.Length<=2)
-            {
-                return new ErrorResult("Araba markası 2 harften uzun olmalıdır.");
-            }
-            else if (brand.BrandName == null)
-            {
-                return new ErrorResult("Araba markası boş olmamalıdır.");
-            }
-            else
-            {
                 _iBrandDal.Add(brand);
                 return new SuccessResult(Messages.BrandAdded);
-            }
-
         }
 
         public IResult Delete(Brand brand)
@@ -48,6 +39,7 @@ namespace Business.Concrete
             return new SuccessResult(Messages.BrandDeleted);
         }
 
+        [ValidationAspect(typeof(BrandValidator))]
         public IResult Update(Brand brand)
         {
             _iBrandDal.Update(brand);
