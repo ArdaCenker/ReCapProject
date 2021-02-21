@@ -4,27 +4,27 @@
 # :books: Layers
 ## :books: **Entities**
   * :open_file_folder: ~~Abstract~~
-  * :open_file_folder: [Concrete](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete)
+  * :open_file_folder: Concrete
     * [Car.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete/Car.cs)
     * [Brand.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete/Brand.cs)
     * [Color.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete/Color.cs)
     * [User.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete/User.cs)
     * [Customer.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete/Customer.cs)
     * [Rental.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete/Rental.cs)
-  * :open_file_folder: [DTO's](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs)
+  * :open_file_folder: DTO's
     * [CarDetailDto.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs/CarDetailDto.cs)
     * [RentalDetailDto.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs/RentalDetailDto.cs)
     
 ## :books: **DataAccess**
-  * :open_file_folder: [Abstract](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract)
+  * :open_file_folder: Abstract
     * [ICarDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/ICarDal.cs)
     * [IBrandDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/IBrandDal.cs)
     * [IColorDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/IColorDal.cs)
     * [IUserDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/IUserDal.cs)
     * [ICustomerDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/ICustomerDal.cs)
     * [IRentalDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/IRentalDal.cs)
-  * :open_file_folder: [Concrete](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete)
-    * :open_file_folder: [EntityFramework](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework)
+  * :open_file_folder: Concrete
+    * :open_file_folder: EntityFramework
       * [EfCarDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/EfCarDal.cs)
       * [EfBrandDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/EfBrandDal.cs)
       * [EfColorDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/EfColorDal.cs)
@@ -35,27 +35,27 @@
     * :open_file_folder: ~~InMemory~~
   
 ## :books: **Business**
-  * :open_file_folder: [Abstract](https://github.com/]ArdaCenker/ReCapProject/tree/master/Business/Abstract)
+  * :open_file_folder: Abstract
     * [ICarService.cs](https://github.com/]ArdaCenker/ReCapProject/tree/master/Business/Abstract/ICarService.cs)
     * [IBrandService.cs](https://github.com/]ArdaCenker/ReCapProject/tree/master/Business/Abstract/IBrandService.cs)
     * [IColorService.cs](https://github.com/]ArdaCenker/ReCapProject/tree/master/Business/Abstract/IColorService.cs)
     * [IUserService.cs](https://github.com/]ArdaCenker/ReCapProject/tree/master/Business/Abstract/IUserService.cs)
     * [ICustomerService.cs](https://github.com/]ArdaCenker/ReCapProject/tree/master/Business/Abstract/ICustomerService.cs)
     * [IRentalService.cs](https://github.com/]ArdaCenker/ReCapProject/tree/master/Business/Abstract/IRentalService.cs)
-  * :open_file_folder: [Concrete](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Concrete)
+  * :open_file_folder: Concrete
     * [CarManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Concrete/CarManager.cs)
     * [BrandManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Concrete/BrandManager.cs)
     * [ColorManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Concrete/ColorManager.cs)
     * [UserManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Concrete/UserManager.cs)
     * [CustomerManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Concrete/CustomerManager.cs)
     * [RentalManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Concrete/RentalManager.cs)
-  * :open_file_folder: [Constants](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Constants)
+  * :open_file_folder: Constants
     * [Messages.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Constants/Messages.cs)
-  * :open_file_folder: [DependencyResolvers](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/DependencyResolvers)
-    * :open_file_folder: [Autofac](https://github.com/ArdaCenker/ReCapProject/blob/master/Business/DependencyResolvers/Autofac)
+  * :open_file_folder: DependencyResolvers
+    * :open_file_folder: Autofac
       * [AutofacBusinessModule.cs](https://github.com/ArdaCenker/ReCapProject/blob/master/Business/DependencyResolvers/Autofac/AutofacBusinessModule.cs)
-  * :open_file_folder: [ValidationRules](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/ValidationRules)
-    * :open_file_folder: [FluentValidation](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/ValidationRules/FluentValidation)
+  * :open_file_folder: ValidationRules
+    * :open_file_folder: FluentValidation
       * [CarValidator.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/ValidationRules/FluentValidation/CarValidator.cs)
       * [BrandValidator.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/ValidationRules/FluentValidation/BrandValidator.cs)
       * [ColorValidator.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/ValidationRules/FluentValidation/ColorValidator.cs)
@@ -64,26 +64,26 @@
       * [RentalValidator.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/ValidationRules/FluentValidation/RentalValidator.cs)
   
 ## :books: **Core**
-  * :open_file_folder: [Aspects](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Aspects)
-    * :open_file_folder: [Autofac](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Aspects/Autofac)
-      * :open_file_folder: [Validation](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Aspects/Autofac/Validation)
+  * :open_file_folder: Aspects
+    * :open_file_folder: Autofac
+      * :open_file_folder: Validation
         * [ValidationAspect.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Aspects/Autofac/Validation/ValidationAspect.cs)
-  * :open_file_folder: [CrossCuttingConcerns](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/CrossCuttingConcerns)
-    * :open_file_folder:[Validation](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/CrossCuttingConcerns/Validation)
+  * :open_file_folder: CrossCuttingConcerns
+    * :open_file_folder: Validation
       * [ValidationTool.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/CrossCuttingConcerns/Validation/ValidationTool.cs)
-  * :open_file_folder: [DataAccess](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/DataAccess)
-    * :open_file_folder: [EntityFramework](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/DataAccess/EntityFramework)
+  * :open_file_folder: DataAccess
+    * :open_file_folder: EntityFramework
       * [EfEntityRepositoryBase.cs](https://github.com/ArdaCenker/ReCapProject/blob/master/Core/DataAccess/EntityFramework/EfEntityRepositoryBase.cs)
     * [IEntityRepository.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/DataAccess/IEntityRepository.cs)
-  * :open_file_folder: [Entities](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Entities)
+  * :open_file_folder: Entities
     * [IEntity.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Entities/IEntity.cs)
     * [IDto.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Entities/IDto.cs)
-  * :open_file_folder: [Utilities](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities)
-    * :open_file_folder: [Interceptors](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities/Interceptors)
+  * :open_file_folder: Utilities
+    * :open_file_folder: Interceptors
       * [AspectInterceptorSelector.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities/Interceptors/AspectInterceptorSelector.cs)
       * [MethodInterception.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities/Interceptors/MethodInterception.cs)
       * [MethodInterceptionBaseAttribute.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities/Interceptors/MethodInterceptionBaseAttribute.cs)
-    * :open_file_folder: [Results](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities/Results)
+    * :open_file_folder: Results
       * [IResult.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities/Results/IResult.cs)
       * [Result.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities/Results/Result.cs)
       * [SuccessResult.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities/Results/SuccessResult.cs)
@@ -97,7 +97,7 @@
   * ~~Program.cs~~
   
 ## :books: **WebAPI**
-  * :open_file_folder: [Controllers](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI/Controllers)
+  * :open_file_folder: Controllers
     * [CarsController.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI/Controllers/CarsController.cs)
     * [BrandsController.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI/Controllers/BrandsController.cs)
     * [ColorsController.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI/Controllers/ColorsController.cs)
