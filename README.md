@@ -8,8 +8,8 @@
   3.[DTO's](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs)
     
 ### [DataAccess](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess)
-  1.Abstract
-  2.Concrete
+  1. Abstract
+  2. Concrete
   
 ### [Business](https://github.com/ArdaCenker/ReCapProject/tree/master/Business)
   1.Abstract
