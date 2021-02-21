@@ -115,4 +115,5 @@
   * :bookmark_tabs: [Startup.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI/Startup.cs)
 
 
+![database](https://user-images.githubusercontent.com/77543593/108630048-02fb8b00-7474-11eb-8fbd-413e7475d319.png)
 ## **Database Tables And SQL File**
