@@ -24,6 +24,14 @@
     * [ICustomerDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/ICustomerDal.cs)
     * [IRentalDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/IRentalDal.cs)
   * [Concrete](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete)
+    * [EntityFramework](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework)
+      * [CarManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/CarManager.cs)
+      * [BrandManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/BrandManager.cs)
+      * [ColorManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/ColorManager.cs)
+      * [UserManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/UserManager.cs)
+      * [CustomerManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/CustomerManager.cs)
+      * [RentalManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/RentalManager.cs)
+    * ~~InMemory~~
   
 ### [Business](https://github.com/ArdaCenker/ReCapProject/tree/master/Business)
   * [Abstract](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Abstract)
