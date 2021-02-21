@@ -12,27 +12,27 @@
   * [Concrete](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete)
   
 ### [Business](https://github.com/ArdaCenker/ReCapProject/tree/master/Business)
-  * [Abstract]
-  * [Concrete]
-  * [Constants]
-  * [DependencyResolvers]
-  * [ValidationRules]
+  * [Abstract](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Abstract)
+  * [Concrete](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Concrete)
+  * [Constants](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Constants)
+  * [DependencyResolvers](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/DependencyResolvers)
+  * [ValidationRules](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/ValidationRules)
   
 ### [Core](https://github.com/ArdaCenker/ReCapProject/tree/master/Core)
-  * [Aspects]
-  * [CrossCuttingConcerns]
-  * [DataAccess]
-  * [Entities]
-  * [Utilities]
+  * [Aspects](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Aspects)
+  * [CrossCuttingConcerns](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/CrossCuttingConcerns)
+  * [DataAccess](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/DataAccess)
+  * [Entities](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Entities)
+  * [Utilities](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities)
   
 ### [ConsoleUI (Test Ortamı)](https://github.com/ArdaCenker/ReCapProject/tree/master/ConsoleUI)
+  * ~~Program.cs~~
   
 ### [WebAPI](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI)
-  * [Controllers]
-  * [Properties]
-  * [Program.cs]
-  * [Startup.cs]
-  * [WeatherForecast.cs]
+  * [Controllers](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI/Controllers)
+  * [Properties](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI/Properties)
+  * [Program.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI/Program.cs)
+  * [Startup.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI/Startup.cs)
 
 
 ## Database Tables And SQL File
