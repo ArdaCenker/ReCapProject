@@ -5,6 +5,12 @@
 ### [Entities](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities)
   * ~~Abstract~~
   * [Concrete](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete)
+    * [Car.cs]
+    * [Brand.cs]
+    * [Color.cs]
+    * [User.cs]
+    * [Customer.cs]
+    * [Rental.cs]
   * [DTO's](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs)
     
 ### [DataAccess](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess)
