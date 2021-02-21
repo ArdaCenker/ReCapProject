@@ -3,9 +3,9 @@
 
 ## Layers
   1.[Entities](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities)
-      1.~~Abstract~~
-      2.Concrete(https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete)
-      3.DTO's(https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs)
+  		1.~~Abstract~~
+  		2.Concrete(https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete)
+      	3.DTO's(https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs)
     
   2.[DataAccess](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess)
       1.Abstract
