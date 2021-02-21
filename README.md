@@ -5,16 +5,24 @@
 ### [Entities](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities)
   * ~~Abstract~~
   * [Concrete](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete)
-    * [Car.cs]
-    * [Brand.cs]
-    * [Color.cs]
-    * [User.cs]
-    * [Customer.cs]
-    * [Rental.cs]
+    * [Car.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete/Car.cs)
+    * [Brand.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete/Brand.cs)
+    * [Color.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete/Color.cs)
+    * [User.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete/User.cs)
+    * [Customer.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete/Customer.cs)
+    * [Rental.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete/Rental.cs)
   * [DTO's](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs)
+    * [CarDetailDto.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs/CarDetailDto.cs)
+    * [RentalDetailDto.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs/RentalDetailDto.cs)
     
 ### [DataAccess](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess)
   * [Abstract](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract)
+    * [ICarDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/ICarDal.cs)
+    * [IBrandDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/IBrandDal.cs)
+    * [IColorDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/IColorDal.cs)
+    * [IUserDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/IUserDal.cs)
+    * [ICustomerDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/ICustomerDal.cs)
+    * [IRentalDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/IRentalDal.cs)
   * [Concrete](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete)
   
 ### [Business](https://github.com/ArdaCenker/ReCapProject/tree/master/Business)
