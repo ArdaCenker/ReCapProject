@@ -2,7 +2,7 @@
 ##### Bu proje Engin Demiroğ'un "Nitelikli" Yazılım Geliştirici Geliştirme Kampı genel tekrar ödevi olarak hazırlanmıştır.
 
 # Layers
-## [Entities](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities)
+## [**Entities**](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities)
   * ~~Abstract~~
   * [Concrete](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete)
     * [Car.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete/Car.cs)
@@ -15,7 +15,7 @@
     * [CarDetailDto.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs/CarDetailDto.cs)
     * [RentalDetailDto.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs/RentalDetailDto.cs)
     
-## [DataAccess](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess)
+## [**DataAccess**](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess)
   * [Abstract](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract)
     * [ICarDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/ICarDal.cs)
     * [IBrandDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/IBrandDal.cs)
@@ -34,7 +34,7 @@
       * [RentACarDbContext.cs](https://github.com/ArdaCenker/ReCapProject/blob/master/DataAccess/Concrete/EntityFramework/RentACarDbContext.cs)
     * ~~InMemory~~
   
-## [Business](https://github.com/ArdaCenker/ReCapProject/tree/master/Business)
+## [**Business**](https://github.com/ArdaCenker/ReCapProject/tree/master/Business)
   * [Abstract](https://github.com/]ArdaCenker/ReCapProject/tree/master/Business/Abstract)
     * [ICarService.cs](https://github.com/]ArdaCenker/ReCapProject/tree/master/Business/Abstract/ICarService.cs)
     * [IBrandService.cs](https://github.com/]ArdaCenker/ReCapProject/tree/master/Business/Abstract/IBrandService.cs)
@@ -63,21 +63,21 @@
       * [CustomerValidator.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/ValidationRules/FluentValidation/CustomerValidator.cs)
       * [RentalValidator.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/ValidationRules/FluentValidation/RentalValidator.cs)
   
-## [Core](https://github.com/ArdaCenker/ReCapProject/tree/master/Core)
+## [**Core**](https://github.com/ArdaCenker/ReCapProject/tree/master/Core)
   * [Aspects](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Aspects)
   * [CrossCuttingConcerns](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/CrossCuttingConcerns)
   * [DataAccess](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/DataAccess)
   * [Entities](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Entities)
   * [Utilities](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities)
   
-## [ConsoleUI (Test Ortamı)](https://github.com/ArdaCenker/ReCapProject/tree/master/ConsoleUI)
+## [**ConsoleUI (Test Ortamı)**](https://github.com/ArdaCenker/ReCapProject/tree/master/ConsoleUI)
   * ~~Program.cs~~
   
-## [WebAPI](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI)
+## [**WebAPI**](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI)
   * [Controllers](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI/Controllers)
   * [Properties](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI/Properties)
   * [Program.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI/Program.cs)
   * [Startup.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI/Startup.cs)
 
 
-## Database Tables And SQL File
+## **Database Tables And SQL File**
