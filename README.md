@@ -2,6 +2,8 @@
 ##### Bu proje Engin Demiroğ'un "Nitelikli" Yazılım Geliştirici Geliştirme Kampı genel tekrar ödevi olarak hazırlanmıştır.
 
 # :books: Layers
+
+![entities](https://user-images.githubusercontent.com/77543593/108629871-080c0a80-7473-11eb-8941-13d39761ac38.png)
 ## :books: **Entities**
   * :open_file_folder: ~~Abstract~~
   * :open_file_folder: Concrete
@@ -15,6 +17,7 @@
     * :bookmark_tabs: [CarDetailDto.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs/CarDetailDto.cs)
     * :bookmark_tabs: [RentalDetailDto.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs/RentalDetailDto.cs)
     
+![dataaccess](https://user-images.githubusercontent.com/77543593/108629870-07737400-7473-11eb-893f-86127d4c73cf.png)
 ## :books: **DataAccess**
   * :open_file_folder: Abstract
     * :bookmark_tabs: [ICarDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract/ICarDal.cs)
@@ -33,7 +36,8 @@
       * :bookmark_tabs: [EfRentalDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/EfRentalDal.cs)
       * :bookmark_tabs: [RentACarDbContext.cs](https://github.com/ArdaCenker/ReCapProject/blob/master/DataAccess/Concrete/EntityFramework/RentACarDbContext.cs)
     * :open_file_folder: ~~InMemory~~
-  
+
+![business](https://user-images.githubusercontent.com/77543593/108629856-f62a6780-7472-11eb-9aa9-4b449813c107.png)
 ## :books: **Business**
   * :open_file_folder: Abstract
     * :bookmark_tabs: [ICarService.cs](https://github.com/]ArdaCenker/ReCapProject/tree/master/Business/Abstract/ICarService.cs)
@@ -63,6 +67,7 @@
       * :bookmark_tabs: [CustomerValidator.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/ValidationRules/FluentValidation/CustomerValidator.cs)
       * :bookmark_tabs: [RentalValidator.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/ValidationRules/FluentValidation/RentalValidator.cs)
   
+![core](https://user-images.githubusercontent.com/77543593/108629866-02aec000-7473-11eb-9c35-5fe84720f1ec.png)
 ## :books: **Core**
   * :open_file_folder: Aspects
     * :open_file_folder: Autofac
@@ -93,9 +98,11 @@
       * :bookmark_tabs: [SuccessDataResult.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities/Results/SuccessDataResult.cs)
       * :bookmark_tabs: [ErrorDataResult.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities/Results/ErrorDataResult.cs)
   
+![consoleui](https://user-images.githubusercontent.com/77543593/108629937-53261d80-7473-11eb-9704-ba9bb957aad6.png)
 ## :books: **ConsoleUI (Test Ortamı)**
   * :bookmark_tabs: ~~Program.cs~~
   
+![webapi](https://user-images.githubusercontent.com/77543593/108629873-08a4a100-7473-11eb-81c1-6f1705d353f1.png)
 ## :books: **WebAPI**
   * :open_file_folder: Controllers
     * :bookmark_tabs: [CarsController.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI/Controllers/CarsController.cs)
