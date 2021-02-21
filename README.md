@@ -3,33 +3,33 @@
 
 ## Layers
 ### [Entities](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities)
-  1. ~~Abstract~~
-  2. [Concrete](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete)
-  3. [DTO's](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs)
+  * ~~Abstract~~
+  * [Concrete](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/Concrete)
+  * [DTO's](https://github.com/ArdaCenker/ReCapProject/tree/master/Entities/DTOs)
     
 ### [DataAccess](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess)
-  1. [Abstract](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract)
-  2. [Concrete](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete)
+  * [Abstract](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Abstract)
+  * [Concrete](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete)
   
 ### [Business](https://github.com/ArdaCenker/ReCapProject/tree/master/Business)
-  1. [Abstract]
-  2. [Concrete]
-  3. [Constants]
-  4. [DependencyResolvers]
-  5. [ValidationRules]
+  * [Abstract]
+  * [Concrete]
+  * [Constants]
+  * [DependencyResolvers]
+  * [ValidationRules]
   
 ### [Core](https://github.com/ArdaCenker/ReCapProject/tree/master/Core)
-  1. [Aspects]
-  2. [CrossCuttingConcerns]
-  3. [DataAccess]
-  4. [Entities]
-  5. [Utilities]
+  * [Aspects]
+  * [CrossCuttingConcerns]
+  * [DataAccess]
+  * [Entities]
+  * [Utilities]
   
 ### [ConsoleUI (Test Ortamı)](https://github.com/ArdaCenker/ReCapProject/tree/master/ConsoleUI)
   
 ### [WebAPI](https://github.com/ArdaCenker/ReCapProject/tree/master/WebAPI)
-  1. [Controllers]
-  2. [Properties]
+  * [Controllers]
+  * [Properties]
   * [Program.cs]
   * [Startup.cs]
   * [WeatherForecast.cs]
