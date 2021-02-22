@@ -30,7 +30,7 @@
     * :open_file_folder: EntityFramework
       * :bookmark_tabs: [EfCarDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/EfCarDal.cs)
       * :bookmark_tabs: [EfBrandDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/EfBrandDal.cs)
-      * :bookmark_tabs:[EfColorDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/EfColorDal.cs)
+      * :bookmark_tabs: [EfColorDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/EfColorDal.cs)
       * :bookmark_tabs: [EfUserDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/EfUserDal.cs)
       * :bookmark_tabs: [EfCustomerDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/EfCustomerDal.cs)
       * :bookmark_tabs: [EfRentalDal.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/DataAccess/Concrete/EntityFramework/EfRentalDal.cs)
@@ -52,7 +52,7 @@
     * :bookmark_tabs: [ColorManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Concrete/ColorManager.cs)
     * :bookmark_tabs: [UserManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Concrete/UserManager.cs)
     * :bookmark_tabs: [CustomerManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Concrete/CustomerManager.cs)
-    * :bookmark_tabs:[RentalManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Concrete/RentalManager.cs)
+    * :bookmark_tabs: [RentalManager.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Concrete/RentalManager.cs)
   * :open_file_folder: Constants
     * :bookmark_tabs: [Messages.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Business/Constants/Messages.cs)
   * :open_file_folder: DependencyResolvers
