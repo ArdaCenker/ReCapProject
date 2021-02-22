@@ -124,9 +124,9 @@
 
 
 ## Used NuGet Packages
-<code>Microsoft.EntityFrameworkCore.SqlServer v5.0.3</code>
-<code>FluentValidation v9.5.1</code>
-<code>Autofac v6.1.0</code>
-<code>Autofac.Extras.DynamicProxy v6.0.0</code>
-<code>Autofac.Extensions.DependencyInjection v7.1.0</code>
+  * <code>Microsoft.EntityFrameworkCore.SqlServer v5.0.3</code>
+  * <code>FluentValidation v9.5.1</code>
+  * <code>Autofac v6.1.0</code>
+  * <code>Autofac.Extras.DynamicProxy v6.0.0</code>
+  * <code>Autofac.Extensions.DependencyInjection v7.1.0</code>
 
