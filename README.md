@@ -119,3 +119,5 @@
 ## **Database Tables And SQL File**
   * :open_file_folder: SQL File
     * :bookmark_tabs: [CarRental.sql](https://github.com/ArdaCenker/ReCapProject/blob/master/CarRental.sql)
+
+![dbtable](https://user-images.githubusercontent.com/77543593/108670494-02083f00-74f0-11eb-936d-99f3a099360c.png)
