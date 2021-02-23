@@ -97,6 +97,8 @@
       * :bookmark_tabs: [DataResult.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities/Results/DataResult.cs)
       * :bookmark_tabs: [SuccessDataResult.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities/Results/SuccessDataResult.cs)
       * :bookmark_tabs: [ErrorDataResult.cs](https://github.com/ArdaCenker/ReCapProject/tree/master/Core/Utilities/Results/ErrorDataResult.cs)
+
+### :warning: :warning: NOT: Core katmanı hiçbir katmana bağımlı değildir. İstediğiniz projede kullanabilirsiniz. :warning: :warning:
   
 ![consoleui](https://user-images.githubusercontent.com/77543593/108629937-53261d80-7473-11eb-9704-ba9bb957aad6.png)
 ## :books: **ConsoleUI (Test Ortamı)**
