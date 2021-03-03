@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Core.Concrete;
+using Entities.Concrete;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,6 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(u => u.LastName).NotEmpty().WithMessage("Kullanıcı soyadı boş olamaz.");
             RuleFor(u => u.LastName).MinimumLength(2).WithMessage("Kullanıcı soyadı en az 2 karakter olmalıdır.");
             RuleFor(u => u.Email).NotEmpty().WithMessage("Email boş olamaz.");
-            RuleFor(u => u.Password).NotEmpty().WithMessage("Şifre boş olamaz.");
         }
     }
 }

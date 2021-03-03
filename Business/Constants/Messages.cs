@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -28,5 +29,6 @@ namespace Business.Constants
         public static string RentalUpdated = "Kiralama işlemi başarıyla güncellendi.";
         public static string AllCarsListed = "Tüm araçlar listelendi.";
         public static string AboveTheAddingLimit = "Bu arabaya daha fazla resim eklenemez.";
+        public static string AuthorizationDenied = "Yetkiniz yok.";
     }
 }
