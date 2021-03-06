@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Core.Utilities.Business;
 using Core.Utilities.Results;
@@ -21,6 +22,7 @@ namespace Business.Concrete
             _carImageDal = carImageDal;
         }
 
+        [SecuredOperation("admin")]
         public IResult Add(IFormFile file, CarImage image)
         {
             var result = BusinessRules.Run(CheckCarImageCount(image.CarId));
@@ -61,6 +63,7 @@ namespace Business.Concrete
             return new ErrorResult("Böyle bir dosya olmadığı için işlem gerçekleştirilemedi.");
         }
 
+        [SecuredOperation("admin")]
         public IResult Delete(CarImage carImage)
         {
             var image = _carImageDal.Get(c => c.Id == carImage.Id);
@@ -80,6 +83,7 @@ namespace Business.Concrete
             return new SuccessResult("Resim başarıyla silindi");
         }
 
+        [SecuredOperation("admin")]
         public IDataResult<List<CarImage>> GetAll()
         {
             return new SuccessDataResult<List<CarImage>>(_carImageDal.GetAll());
@@ -110,6 +114,7 @@ namespace Business.Concrete
             return new SuccessDataResult<CarImage>(_carImageDal.Get(i => i.Id == id));
         }
 
+        [SecuredOperation("admin")]
         public IResult Update(IFormFile file, CarImage image)
         {
             var carImage = _carImageDal.Get(c => c.Id == image.Id);

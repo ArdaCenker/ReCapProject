@@ -2,6 +2,7 @@
 using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Transaction;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Results;
@@ -36,17 +37,19 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Car>>(_iCarDal.GetAll(p => p.DailyPrice >= min && p.DailyPrice <= max && p.DailyPrice>=0));
         }
 
+        [SecuredOperation("admin")]
         public IDataResult<List<Car>> GetAllByBrandId(int brandId)
         {
             return new SuccessDataResult<List<Car>>(_iCarDal.GetAll(p=>p.BrandId == brandId));
         }
 
+        [SecuredOperation("admin")]
         public IDataResult<List<Car>> GetAllByColorId(int colorId)
         {
             return new SuccessDataResult<List<Car>>(_iCarDal.GetAll(p => p.ColorId == colorId));
         }
 
-        [SecuredOperation("car.add")]
+        [SecuredOperation("admin")]
         [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car car)
         {
@@ -54,12 +57,14 @@ namespace Business.Concrete
             return new SuccessResult(Messages.CarAdded);       
         }
 
+        [SecuredOperation("admin")]
         public IResult Delete(Car car)
         {
             _iCarDal.Delete(car);
             return new SuccessResult(Messages.CarDeleted);
         }
 
+        [SecuredOperation("admin")]
         [ValidationAspect(typeof(CarValidator))]
         public IResult Update(Car car)
         {
@@ -75,6 +80,20 @@ namespace Business.Concrete
         public IDataResult<Car> GetCarById(int id)
         {
             return new SuccessDataResult<Car>(_iCarDal.Get(i => i.Id == id));
+        }
+
+        [TransactionScopeAspect]
+        public IResult AddTransactionalTest(Car car)
+        {
+            Add(car);
+            if (car.DailyPrice <= 0)
+            {
+                throw new Exception("");
+            }
+
+            Add(car);
+
+            return null;
         }
     }
 }
