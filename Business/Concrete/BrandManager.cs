@@ -27,7 +27,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Brand>>(_iBrandDal.GetAll());
         }
 
-        [SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
         [ValidationAspect(typeof(BrandValidator))]
         public IResult Add(Brand brand)
         {

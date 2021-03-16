@@ -26,7 +26,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Color>>(_iColorDal.GetAll());
         }
 
-        [SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
         [ValidationAspect(typeof(ColorValidator))]
         public IResult Add(Color color)
         {

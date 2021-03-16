@@ -25,7 +25,7 @@ namespace Business.Concrete
             _userDal = userDal;
         }
 
-        [SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
         [ValidationAspect(typeof(UserValidator))]
         public IResult Add(User user)
         {
@@ -33,38 +33,38 @@ namespace Business.Concrete
             return new SuccessResult(Messages.UserAdded);
         }
 
-        [SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
         public IResult Delete(User user)
         {
             _userDal.Delete(user);
             return new SuccessResult(Messages.UserDeleted);
         }
 
-        [SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
         public IDataResult<List<User>> GetAll()
         {
             return new SuccessDataResult<List<User>>(_userDal.GetAll());
         }
 
-        [SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
         public User GetByMail(string email)
         {
             return _userDal.Get(u => u.Email == email);
         }
 
-        [SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
         public IDataResult<User> GetByUserId(int id)
         {
             return new SuccessDataResult<User>(_userDal.Get(p => p.Id == id));
         }
 
-        [SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
         public List<OperationClaim> GetClaims(User user)
         {
             return _userDal.GetClaims(user);
         }
 
-        [SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
         [ValidationAspect(typeof(UserValidator))]
         public IResult Update(User user)
         {

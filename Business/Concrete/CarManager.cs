@@ -37,19 +37,17 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Car>>(_iCarDal.GetAll(p => p.DailyPrice >= min && p.DailyPrice <= max && p.DailyPrice>=0));
         }
 
-        [SecuredOperation("admin")]
         public IDataResult<List<Car>> GetAllByBrandId(int brandId)
         {
             return new SuccessDataResult<List<Car>>(_iCarDal.GetAll(p=>p.BrandId == brandId));
         }
 
-        [SecuredOperation("admin")]
         public IDataResult<List<Car>> GetAllByColorId(int colorId)
         {
             return new SuccessDataResult<List<Car>>(_iCarDal.GetAll(p => p.ColorId == colorId));
         }
 
-        [SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
         [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car car)
         {
