@@ -81,6 +81,11 @@ namespace Business.Concrete
             _rentalDal.Update(rental);
             return new SuccessResult("Kiralama işlemi güncellendi.");
         }
+
+        public IDataResult<List<RentalDetailDto>> GetRentalDetailsByCarId(int carId)
+        {
+            return new SuccessDataResult<List<RentalDetailDto>>(_rentalDal.GetRentalDetails().Where(r=>r.CarId==carId).ToList());
+        }
     }
 }
 

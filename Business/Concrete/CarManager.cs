@@ -15,6 +15,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
+using System.Linq;
 
 namespace Business.Concrete
 {
@@ -46,6 +47,11 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<List<Car>>(_iCarDal.GetAll(p => p.ColorId == colorId));
         }
+        
+        public IDataResult<List<Car>> GetCarsByBrandAndColorId(int brandId, int colorId)
+        {
+            return new SuccessDataResult<List<Car>>(_iCarDal.GetAll(c=>c.BrandId==brandId && c.ColorId==colorId)); 
+        }
 
         //[SecuredOperation("admin")]
         [ValidationAspect(typeof(CarValidator))]
@@ -70,9 +76,9 @@ namespace Business.Concrete
             return new SuccessResult(Messages.CarUpdated);
         }
 
-        public IDataResult<List<CarDetailDto>> GetCarDetails()
+        public IDataResult<List<CarDetailDto>> GetCarDetails(int carId)
         {
-            return new SuccessDataResult<List<CarDetailDto>>(_iCarDal.GetCarDetails());
+            return new SuccessDataResult<List<CarDetailDto>>(_iCarDal.GetCarDetails().Where(x => x.Id ==carId).ToList());
         }
 
         public IDataResult<Car> GetCarById(int id)
@@ -93,5 +99,7 @@ namespace Business.Concrete
 
             return null;
         }
+
+        
     }
 }

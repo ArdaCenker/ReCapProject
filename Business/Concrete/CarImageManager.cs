@@ -22,7 +22,7 @@ namespace Business.Concrete
             _carImageDal = carImageDal;
         }
 
-        [SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
         public IResult Add(IFormFile file, CarImage image)
         {
             var result = BusinessRules.Run(CheckCarImageCount(image.CarId));
@@ -32,7 +32,7 @@ namespace Business.Concrete
             }
 
             var currentDirectory = Environment.CurrentDirectory + @"\wwwroot";
-            var path = @"\images";
+            var path = @"\images\";
 
             if (file != null && file.Length > 0)
             {
@@ -63,7 +63,7 @@ namespace Business.Concrete
             return new ErrorResult("Böyle bir dosya olmadığı için işlem gerçekleştirilemedi.");
         }
 
-        [SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
         public IResult Delete(CarImage carImage)
         {
             var image = _carImageDal.Get(c => c.Id == carImage.Id);
@@ -83,7 +83,7 @@ namespace Business.Concrete
             return new SuccessResult("Resim başarıyla silindi");
         }
 
-        [SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
         public IDataResult<List<CarImage>> GetAll()
         {
             return new SuccessDataResult<List<CarImage>>(_carImageDal.GetAll());
@@ -114,7 +114,7 @@ namespace Business.Concrete
             return new SuccessDataResult<CarImage>(_carImageDal.Get(i => i.Id == id));
         }
 
-        [SecuredOperation("admin")]
+        //[SecuredOperation("admin")]
         public IResult Update(IFormFile file, CarImage image)
         {
             var carImage = _carImageDal.Get(c => c.Id == image.Id);

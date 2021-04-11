@@ -6,8 +6,10 @@ using Core.Aspects.Autofac.Validation;
 using Core.Concrete;
 using Core.Entities.Concrete;
 using Core.Utilities.Results;
+using Core.Utilities.Security.Hashing;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -70,6 +72,39 @@ namespace Business.Concrete
         {
             _userDal.Update(user);
             return new SuccessResult(Messages.UserUpdated);
+        }
+
+        public IDataResult<User> GetByEmail(string email)
+        {
+            return new SuccessDataResult<User>(_userDal.Get(u => u.Email == email));
+        }
+
+        public IResult UpdateUserInfos(ChangeUserInfoDto changeUserInfo)
+        {
+            var userToUpdate = GetByEmail(changeUserInfo.Email).Data;
+            userToUpdate.FirstName = changeUserInfo.FirstName;
+            userToUpdate.LastName = changeUserInfo.LastName;
+            Update(userToUpdate);
+            return new SuccessResult();
+        }
+
+        public IResult ChangeUserPassword(ChangeUserPasswordDto changePasswordDto)
+        {
+            byte[] passwordHash, passwordSalt;
+            var userToCheck = GetByEmail(changePasswordDto.Email);
+            if (userToCheck.Data == null)
+            {
+                return new ErrorResult("Kullanıcı bulunamadı");
+            }
+            if (!HashingHelper.VerifyPasswordHash(changePasswordDto.OldPassword, userToCheck.Data.PasswordHash, userToCheck.Data.PasswordSalt))
+            {
+                return new ErrorResult("Parola hatası");
+            }
+            HashingHelper.CreatePasswordHash(changePasswordDto.NewPassword, out passwordHash, out passwordSalt);
+            userToCheck.Data.PasswordHash = passwordHash;
+            userToCheck.Data.PasswordSalt = passwordSalt;
+            Update(userToCheck.Data);
+            return new SuccessResult("Parola değiştirildi");
         }
     }
 }

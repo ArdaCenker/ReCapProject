@@ -2,6 +2,7 @@
 using Core.Entities.Concrete;
 using Core.Utilities.Results;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,5 +20,7 @@ namespace Business.Abstract
         IResult Update(User user);
         List<OperationClaim> GetClaims(User user);
         User GetByMail(string email);
+        IResult UpdateUserInfos(ChangeUserInfoDto changeUserInfo);
+        IResult ChangeUserPassword(ChangeUserPasswordDto changePasswordDto);
     }
 }
