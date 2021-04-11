@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using Core.Concrete;
 using Entities.Concrete;
+using Entities.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -73,6 +74,29 @@ namespace WebAPI.Controllers
             {
                 return Ok(result);
             }
+            return BadRequest(result);
+        }
+
+        [HttpPost("updateuserinfos")]
+        public IActionResult UpdateUserInfos(ChangeUserInfoDto userInfoDto)
+        {
+            var result = _userService.UpdateUserInfos(userInfoDto);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpPost("changeuserpassword")]
+        public IActionResult ChangeUserPassword(ChangeUserPasswordDto changeUserPassword)
+        {
+            var result = _userService.ChangeUserPassword(changeUserPassword);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+
             return BadRequest(result);
         }
     }
